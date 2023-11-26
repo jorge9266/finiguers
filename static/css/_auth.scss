@@ -1,0 +1,63 @@
+@use "vars";
+
+div.auth{
+    padding: 20px 300px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+
+    form.authForm {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: vars.$color_fondo_boton_auth;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            
+
+            &:hover{
+                background-color: vars.$color_hover_boton_auth;
+            }
+        }
+
+        p{
+            margin-top: 15px;
+            
+
+            a {
+                color: red;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

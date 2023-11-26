@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Nunito:wght@300&display=swap');
+
+@import "header";
+@import "footer";
+@import "auth";
+@import "contact";
+@import "about";
+@import "vars";
+@import "producto";
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}

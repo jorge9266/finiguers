@@ -1,0 +1,60 @@
+@use "vars";
+
+main.container {
+    max-width: 800px;
+    margin: 20px auto;
+
+section {
+    text-align: center;
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-color: 1px solid vars.$color_fondo_boton_contacto;
+            border-radius: 4px;
+            
+
+            &:focus {
+                border-color: vars.$color_fondo_boton_contacto;
+            }
+        }
+
+        button {
+            background-color: vars.$color_fondo_boton_contacto;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            
+            &:hover {
+                background-color: vars.$color_hover_boton_contacto;
+            }
+        }
+    }
+
+    div {
+        margin-top: 40px;
+
+        p {
+            margin: 10px 0;
+        }
+    }
+}
+}
