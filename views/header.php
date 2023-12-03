@@ -16,16 +16,17 @@ if (isset($_SESSION["usuario"])) {
                 <li><a href="perfil.php" id="menu_usuario">¡Hola, <?= $nombre_usuario ?>!</a><a href="backend/logout.php">Desconectarse!</a></li>
             </ul>
             <ul class="categorias-barra">
-                <li><a href="#">Ropa</a></li>
-                <li><a href="#">Zapatos</a></li>
-                <li><a href="#">Lo Ultimo</a></li>
-                <li><a href="#">Accesorios</a></li>
+                <li><a href="categoria.php">Ropa</a></li>
+                <li><a href="categoria.php">Zapatos</a></li>
+                <li><a href="categoria.php">Lo Ultimo</a></li>
+                <li><a href="categoria.php">Accesorios</a></li>
                 <li class="busqueda">
                     <button type="submit" class="busqueda" id="btnBusqueda"><img src="static/img/search.svg" alt="" class="busqueda"></button>
-                    <input type="search" src="" alt="">
+                    <input type="search" name="busqueda" placeholder="Buscar..." required>
                 </li>
             </ul>
         </nav>
+        <hr>
     </header>
 <?php
 } else {
@@ -44,20 +45,21 @@ if (isset($_SESSION["usuario"])) {
                 <li><a href="auth.php" id="menu_usuario">Menu Usuario</a></li>
             </ul>
             <ul class="categorias-barra">
-                <li><a href="#">Ropa</a></li>
-                <li><a href="#">Zapatos</a></li>
-                <li><a href="#">Lo Ultimo</a></li>
-                <li><a href="#">Accesorios</a></li>
+                <li><a href="categoria.php">Ropa</a></li>
+                <li><a href="categoria.php">Zapatos</a></li>
+                <li><a href="categoria.php">Lo Ultimo</a></li>
+                <li><a href="categoria.php">Accesorios</a></li>
                 <li class="busqueda">
                     <button type="submit" class="busqueda" id="btnBusqueda"><img src="static/img/search.svg" alt="" class="busqueda"></button>
-                    <input type="search" src="" alt="">
+                    <input type="search" name="busqueda" placeholder="Buscar..." required>
                 </li>
             </ul>
         </nav>
+        <hr>
     </header>
 
-        
-    
+
+
 <?php
 }
 ?>

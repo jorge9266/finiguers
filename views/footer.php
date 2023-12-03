@@ -47,7 +47,5 @@
 
 </body>
 <script src="static/js/app.js"></script>
-<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_ptCPq9dtmb-4hZUdWNacjNHY8SvVlN4&callback=console.debug&libraries=maps,marker&v=beta">
-    </script>
 
 </html>

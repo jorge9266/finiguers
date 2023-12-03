@@ -1,3 +1,5 @@
+@use "vars";
+
 main.container-about {
     max-width: 800px;
     height: 100%;
@@ -9,7 +11,7 @@ main.container-about {
 
 
         h2 {
-            color: #333;
+            color: vars.$color-negro;
         }
 
         p {
@@ -21,7 +23,7 @@ main.container-about {
             margin-bottom: 40px;
 
             h3 {
-                color: #333;
+                color: vars.$color-negro;
             }
 
             p {

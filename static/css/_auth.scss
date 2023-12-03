@@ -8,7 +8,7 @@ div.auth{
     text-align: center;
 
     form.authForm {
-        background-color: #fff;
+        background-color: vars.$color-blanco;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -17,7 +17,7 @@ div.auth{
         text-align: center;
 
         h2 {
-            color: #333;
+            color: vars.$color-negro;
         }
 
         label {
@@ -35,7 +35,7 @@ div.auth{
 
         button {
             background-color: vars.$color_fondo_boton_auth;
-            color: #fff;
+            color: vars.$color-blanco;
             padding: 10px;
             border: none;
             border-radius: 4px;

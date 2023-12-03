@@ -16,13 +16,13 @@ main.articulo {
         div.fotos img {
             width: 512px;
             height: 512px;
-            object-fit: fill;
+            object-fit: contain;
         }
 
         div.galeria img {
             width: 87px;
             height: 87px;
-            object-fit: cover;
+            object-fit: contain;
         }
 
         section {
@@ -64,8 +64,8 @@ main.articulo {
                 margin-top: 10px;
 
                 th {
-                    background-color: black;
-                    color: white;
+                    background-color: vars.$color-negro;
+                    color: vars.$color-blanco;
                     border: 2px solid #dddddd;
                     text-align: left;
                     padding: 8px;
@@ -80,8 +80,7 @@ main.articulo {
 
             div>button {
                 background: vars.$color_fondo_boton_artiuclo;
-                color: #fff;
-                font-family: "Roboto", sans-serif;
+                color: vars.$color-blanco;
                 font-size: 17px;
                 margin-top: 20px;
                 padding: 10px 15px;

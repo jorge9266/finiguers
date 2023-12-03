@@ -1,0 +1,151 @@
+@use "vars";
+
+.seccion-productos,
+.seccion-pedidos {
+  margin: 20px;
+
+  p {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+table,
+form.editar-articulo,
+form.añadir-articulo {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+
+  th,
+  td {
+    
+    padding: 8px;
+    text-align: left;
+
+    button.añadir {
+      margin-left: 45%;
+    }
+  }
+
+
+  th {
+    background-color: vars.$color-negro;
+    color: vars.$color-blanco;
+  }
+
+  input,
+  textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  a.editar {
+    background-color: vars.$color-botones-verde;
+    color: vars.$color-blanco;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 4px;
+  }
+
+  a.eliminar {
+    display: inline-block;
+    background-color: vars.$color-botones-rojo;
+    color: vars.$color-blanco;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: vars.$color-botones-verde;
+    color: vars.$color-blanco;
+    padding: vars.$padding-botones;
+    border: none;
+    border-radius: 4px;
+  }
+
+  button.cancelar {
+    background-color: vars.$color-botones-rojo;
+    color: vars.$color-blanco;
+    padding: vars.$padding-botones;
+    border: none;
+    border-radius: 4px;
+
+    a {
+      color: vars.$color-blanco;
+      text-decoration: none;
+    }
+  }
+
+}
+
+#botonAñadirArticulo {
+  background-color: vars.$color-negro;
+  color: vars.$color-blanco;
+  padding: vars.$padding-botones;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+  display: block;
+}
+
+div#modalAñadirProductos {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+
+  div.modal {
+    max-width: 600px;
+    margin: 30px auto;
+    position: relative;
+    border: 1px solid $color-borde-modal;
+    border-collapse: collapse;
+    border-radius: $radio-borde-modal;
+    background-color: $color-fondo-modal;
+    z-index: 10;
+
+    div.cabecera {
+      background-color: vars.$color-negro;
+      color: vars.$color-blanco;
+      text-align: center;
+      padding: 5px;
+      border-top-left-radius: $radio-borde-modal; 
+      border-top-right-radius: $radio-borde-modal;
+      h5{
+        font-size: 1rem;
+      }
+      button {
+        color: vars.$color-blanco;
+        font-size: 20px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  button#botonCerrar {
+    background-color: $color-botones-rojo;
+    color: vars.$color-blanco;
+    padding: vars.$padding-botones;
+    border: none;
+    border-radius: $radio-borde-modal;
+  }
+}

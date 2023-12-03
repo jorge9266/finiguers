@@ -1,0 +1,60 @@
+@use "vars";
+
+.breadcrumb {
+    padding: 10px;
+    font-size: 14px;
+}
+
+section.categoria {
+    text-align: center;
+    padding: 20px;
+
+    form {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        input {
+            padding: 8px;
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 8px 15px;
+            background: vars.$color-negro;
+            color: vars.$color-blanco;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    a {
+        text-decoration: none; 
+    }
+
+    span {
+        padding: 8px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    
+    }
+
+    .separador {
+        margin: 0 5px;
+    }
+
+    .siguiente-pagina {
+        background: vars.$color-negro;
+        color: vars.$color-blanco;
+    
+        a{
+            color:vars.$color-blanco
+        }
+    }
+}

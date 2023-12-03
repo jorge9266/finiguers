@@ -1,0 +1,156 @@
+@use "vars";
+
+section.hero {
+    background: url('../../static/img/banner.jpg') center/cover no-repeat;
+    color: vars.$color-blanco;
+    text-align: center;
+    padding: 100px 20px;
+
+    div {
+        max-width: 800px;
+        margin: 0 auto;
+
+        a {
+            display: inline-block;
+            background: #ff3366;
+            color: vars.$color-blanco;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    }
+}
+
+section.categorias {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+
+    div {
+        text-align: center;
+        margin: 10px;
+
+        img {
+            width: 600px;
+            height: 480px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: vars.$color-negro;
+            font-size: 16px;
+        }
+    }
+}
+
+section.listado {
+    text-align: center;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    div {
+        width: 155px;
+        margin: 20px;
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 10px;
+
+        h3{
+            color: black;
+            font-weight: bold;
+            
+        }
+
+        img {
+            max-width: 250px;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        a{
+            text-decoration: none;
+    
+            p.precio {
+                font-weight: bold;
+                color: vars.$color-negro;
+            }
+            
+            p.disponibilidad {
+                margin-top: 5px;
+                font-size: 14px;
+                color: vars.$color-botones-verde;
+                /* Azul para disponibilidad */
+            }
+            
+            p.fuera-de-stock {
+                color: vars.$color-botones-rojo;
+                /* Rojo para agotado */
+            }
+            
+            button {
+                padding: 8px 15px;
+                background: vars.$color-botones-verde;
+                color: vars.$color-blanco;
+                border: none;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            
+            button:disabled {
+                background: #ccc;
+                cursor: not-allowed;
+            }
+    
+        }
+
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+    }
+}
+
+section.ofertas {
+    text-align: center;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    div {
+        margin: 30px;
+    }
+}
+
+section.recomendaciones {
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+        border-radius: 50%;
+        margin-bottom: 10px;
+        max-width: 250px;
+        max-height: 150px;
+    }
+
+    p.nombre {
+        font-weight: bold;
+    }
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}

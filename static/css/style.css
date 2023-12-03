@@ -1,7 +1,12 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Nunito:wght@300&display=swap");
+/* CONTACT */
+/* AUTH */
+/* PRODUCTO */
+/* MODAL */
+/* BOTONES */
 header {
-  background-color: #fff;
-  padding: 5px 0;
+  background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 header nav {
@@ -33,7 +38,7 @@ header nav ul li img {
 }
 header nav ul a {
   text-decoration: none;
-  color: #333;
+  color: black;
   font-weight: bold;
   font-size: 16px;
 }
@@ -47,6 +52,7 @@ header nav .busqueda {
   align-items: center;
 }
 header nav .busqueda button {
+  display: flex;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -67,7 +73,17 @@ header nav .busqueda input[type=search] {
 header nav .busqueda input[type=search]:focus {
   border-color: red;
 }
+header hr {
+  margin: 0;
+  height: 20px;
+  background-color: black;
+}
 
+/* CONTACT */
+/* AUTH */
+/* PRODUCTO */
+/* MODAL */
+/* BOTONES */
 footer {
   display: flex;
   flex-direction: column;
@@ -103,9 +119,10 @@ footer div.columnas div:nth-child(1) {
 }
 
 /* CONTACT */
-/* ABOUT */
 /* AUTH */
 /* PRODUCTO */
+/* MODAL */
+/* BOTONES */
 div.auth {
   padding: 20px 300px 20px;
   display: flex;
@@ -114,7 +131,7 @@ div.auth {
   text-align: center;
 }
 div.auth form.authForm {
-  background-color: #fff;
+  background-color: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -123,7 +140,7 @@ div.auth form.authForm {
   text-align: center;
 }
 div.auth form.authForm h2 {
-  color: #333;
+  color: black;
 }
 div.auth form.authForm label {
   display: block;
@@ -138,7 +155,7 @@ div.auth form.authForm input {
 }
 div.auth form.authForm button {
   background-color: red;
-  color: #fff;
+  color: white;
   padding: 10px;
   border: none;
   border-radius: 4px;
@@ -158,9 +175,10 @@ div.auth form.authForm p a:hover {
 }
 
 /* CONTACT */
-/* ABOUT */
 /* AUTH */
 /* PRODUCTO */
+/* MODAL */
+/* BOTONES */
 main.container {
   max-width: 800px;
   margin: 20px auto;
@@ -194,7 +212,7 @@ main.container section form input:focus, main.container section form textarea:fo
 }
 main.container section form button {
   background-color: #680168;
-  color: #fff;
+  color: white;
   padding: 10px;
   border: none;
   border-radius: 4px;
@@ -209,6 +227,11 @@ main.container section div p {
   margin: 10px 0;
 }
 
+/* CONTACT */
+/* AUTH */
+/* PRODUCTO */
+/* MODAL */
+/* BOTONES */
 main.container-about {
   max-width: 800px;
   height: 100%;
@@ -218,7 +241,7 @@ main.container-about section {
   text-align: left;
 }
 main.container-about section h2 {
-  color: #333;
+  color: black;
 }
 main.container-about section p {
   color: #555;
@@ -228,7 +251,7 @@ main.container-about section div {
   margin-bottom: 40px;
 }
 main.container-about section div h3 {
-  color: #333;
+  color: black;
 }
 main.container-about section div p {
   color: #555;
@@ -249,13 +272,15 @@ main.container-about section iframe {
 }
 
 /* CONTACT */
-/* ABOUT */
 /* AUTH */
 /* PRODUCTO */
+/* MODAL */
+/* BOTONES */
 /* CONTACT */
-/* ABOUT */
 /* AUTH */
 /* PRODUCTO */
+/* MODAL */
+/* BOTONES */
 main.articulo {
   display: flex;
   flex-direction: column;
@@ -272,14 +297,14 @@ main.articulo div.contenedor {
 main.articulo div.contenedor div.fotos img {
   width: 512px;
   height: 512px;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main.articulo div.contenedor div.galeria img {
   width: 87px;
   height: 87px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main.articulo div.contenedor section {
   margin-left: 38px;
@@ -326,8 +351,7 @@ main.articulo div.contenedor section table td {
 }
 main.articulo div.contenedor section div > button {
   background: #a8a8a8;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
+  color: white;
   font-size: 17px;
   margin-top: 20px;
   padding: 10px 15px;
@@ -337,7 +361,369 @@ main.articulo div.contenedor section div > button:hover {
   background: rgba(168, 168, 168, 0.6862745098);
 }
 
+/* CONTACT */
+/* AUTH */
+/* PRODUCTO */
+/* MODAL */
+/* BOTONES */
+section.hero {
+  background: url("../../static/img/banner.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+section.hero div {
+  max-width: 800px;
+  margin: 0 auto;
+}
+section.hero div a {
+  display: inline-block;
+  background: #ff3366;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+section.categorias {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+section.categorias div {
+  text-align: center;
+  margin: 10px;
+}
+section.categorias div img {
+  width: 600px;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+section.categorias div a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+section.listado {
+  text-align: center;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+section.listado div {
+  width: 155px;
+  margin: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+section.listado div h3 {
+  color: black;
+  font-weight: bold;
+}
+section.listado div img {
+  max-width: 250px;
+  max-height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+section.listado div a {
+  text-decoration: none;
+}
+section.listado div a p.precio {
+  font-weight: bold;
+  color: black;
+}
+section.listado div a p.disponibilidad {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #4CAF50;
+  /* Azul para disponibilidad */
+}
+section.listado div a p.fuera-de-stock {
+  color: red;
+  /* Rojo para agotado */
+}
+section.listado div a button {
+  padding: 8px 15px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+section.listado div a button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+section.listado div button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+section.ofertas {
+  text-align: center;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+section.ofertas div {
+  margin: 30px;
+}
+
+section.recomendaciones {
+  text-align: center;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+section.recomendaciones img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  max-width: 250px;
+  max-height: 150px;
+}
+section.recomendaciones p.nombre {
+  font-weight: bold;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTACT */
+/* AUTH */
+/* PRODUCTO */
+/* MODAL */
+/* BOTONES */
+.breadcrumb {
+  padding: 10px;
+  font-size: 14px;
+}
+
+section.categoria {
+  text-align: center;
+  padding: 20px;
+}
+section.categoria form {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+section.categoria form input {
+  padding: 8px;
+  margin-right: 5px;
+}
+section.categoria form button {
+  padding: 8px 15px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.paginacion a {
+  text-decoration: none;
+}
+.paginacion span {
+  padding: 8px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.paginacion .separador {
+  margin: 0 5px;
+}
+.paginacion .siguiente-pagina {
+  background: black;
+  color: white;
+}
+.paginacion .siguiente-pagina a {
+  color: white;
+}
+
+/* CONTACT */
+/* AUTH */
+/* PRODUCTO */
+/* MODAL */
+/* BOTONES */
+.seccion-productos,
+.seccion-pedidos {
+  margin: 20px;
+}
+.seccion-productos p,
+.seccion-pedidos p {
+  display: flex;
+  justify-content: center;
+}
+
+table,
+form.editar-articulo,
+form.añadir-articulo {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+table th,
+table td,
+form.editar-articulo th,
+form.editar-articulo td,
+form.añadir-articulo th,
+form.añadir-articulo td {
+  padding: 8px;
+  text-align: left;
+}
+table th button.añadir,
+table td button.añadir,
+form.editar-articulo th button.añadir,
+form.editar-articulo td button.añadir,
+form.añadir-articulo th button.añadir,
+form.añadir-articulo td button.añadir {
+  margin-left: 45%;
+}
+table th,
+form.editar-articulo th,
+form.añadir-articulo th {
+  background-color: black;
+  color: white;
+}
+table input,
+table textarea,
+form.editar-articulo input,
+form.editar-articulo textarea,
+form.añadir-articulo input,
+form.añadir-articulo textarea {
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+table img,
+form.editar-articulo img,
+form.añadir-articulo img {
+  max-width: 50px;
+  max-height: 50px;
+}
+table a.editar,
+form.editar-articulo a.editar,
+form.añadir-articulo a.editar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 4px;
+}
+table a.eliminar,
+form.editar-articulo a.eliminar,
+form.añadir-articulo a.eliminar {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 4px;
+}
+table button,
+form.editar-articulo button,
+form.añadir-articulo button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+}
+table button.cancelar,
+form.editar-articulo button.cancelar,
+form.añadir-articulo button.cancelar {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+}
+table button.cancelar a,
+form.editar-articulo button.cancelar a,
+form.añadir-articulo button.cancelar a {
+  color: white;
+  text-decoration: none;
+}
+
+#botonAñadirArticulo {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+  display: block;
+}
+
+div#modalAñadirProductos {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+div#modalAñadirProductos div.modal {
+  max-width: 600px;
+  margin: 30px auto;
+  position: relative;
+  border: 1px solid white;
+  border-collapse: collapse;
+  border-radius: 20px;
+  background-color: white;
+  z-index: 10;
+}
+div#modalAñadirProductos div.modal div.cabecera {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+div#modalAñadirProductos div.modal div.cabecera h5 {
+  font-size: 1rem;
+}
+div#modalAñadirProductos div.modal div.cabecera button {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+div#modalAñadirProductos button#botonCerrar {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+}
+
 * {
-  font-family: "Josefin Sans", sans-serif;
   font-family: "Nunito", sans-serif;
 }/*# sourceMappingURL=style.css.map */
